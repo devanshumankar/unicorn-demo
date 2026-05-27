@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AI Interview Coach</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: Arial, sans-serif;
+			}
+
+			body {
+				background: #050816;
+				color: white;
+				overflow-x: hidden;
+			}
+
+			.container {
+				width: 90%;
+				max-width: 1200px;
+				margin: auto;
+			}
+
+			header {
+				min-height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				position: relative;
+				overflow: hidden;
+			}
+
+			.hero {
+				z-index: 2;
+				position: relative;
+			}
+
+			h1 {
+				font-size: 4rem;
+				line-height: 1.1;
+				background: linear-gradient(to right, #7f5af0, #2cb67d);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				margin-bottom: 20px;
+			}
+
+			p {
+				color: #cbd5e1;
+				font-size: 1.2rem;
+				max-width: 700px;
+				margin: auto;
+				line-height: 1.6;
+			}
+
+			.btn {
+				margin-top: 30px;
+				display: inline-block;
+				padding: 15px 35px;
+				border-radius: 40px;
+				background: linear-gradient(to right, #7f5af0, #2cb67d);
+				color: white;
+				text-decoration: none;
+				font-weight: bold;
+				transition: 0.3s ease;
+			}
+
+			.btn:hover {
+				transform: scale(1.05);
+				box-shadow: 0 0 30px rgba(127, 90, 240, 0.6);
+			}
+
+			.features {
+				padding: 100px 0;
+			}
+
+			.grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 25px;
+			}
+
+			.card {
+				background: rgba(255, 255, 255, 0.05);
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				padding: 30px;
+				border-radius: 20px;
+				backdrop-filter: blur(10px);
+				transition: 0.3s;
+			}
+
+			.card:hover {
+				transform: translateY(-10px);
+				border-color: #7f5af0;
+			}
+
+			.card h3 {
+				margin-bottom: 15px;
+				font-size: 1.5rem;
+			}
+
+			footer {
+				padding: 50px 0;
+				text-align: center;
+				color: #94a3b8;
+			}
+
+			.bg-glow {
+				position: absolute;
+				width: 500px;
+				height: 500px;
+				background: #7f5af0;
+				filter: blur(150px);
+				opacity: 0.25;
+				top: -100px;
+				left: -100px;
+				z-index: 1;
+			}
+
+			.bg-glow2 {
+				position: absolute;
+				width: 400px;
+				height: 400px;
+				background: #2cb67d;
+				filter: blur(150px);
+				opacity: 0.2;
+				bottom: -100px;
+				right: -100px;
+				z-index: 1;
+			}
+			.unicorn-bg {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100vh;
+				z-index: 0;
+				overflow: hidden;
+			}
+
+			header {
+				position: relative;
+				z-index: 2;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Unicorn Studio Background -->
+		<div class="unicorn-bg">
+			<div
+				style="width: 100%; height: 100vh"
+				data-us-project="qj450A3gLExcURQ7oeLO"
+			></div>
+
+			<script type="text/javascript">
+				!(function () {
+					var u = window.UnicornStudio;
+					if (u && u.init) {
+						if (document.readyState === "loading") {
+							document.addEventListener("DOMContentLoaded", function () {
+								u.init();
+							});
+						} else {
+							u.init();
+						}
+					} else {
+						window.UnicornStudio = { isInitialized: !1 };
+						var i = document.createElement("script");
+						((i.src =
+							"https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.12/dist/unicornStudio.umd.js"),
+							(i.onload = function () {
+								if (document.readyState === "loading") {
+									document.addEventListener(
+										"DOMContentLoaded",
+										function () {
+											UnicornStudio.init();
+										},
+									);
+								} else {
+									UnicornStudio.init();
+								}
+							}),
+							(document.head || document.body).appendChild(i));
+					}
+				})();
+			</script>
+		</div>
+
+		<!-- Hero Section -->
+		<header>
+			<div class="hero container">
+				<h1>Crack Interviews with AI</h1>
+
+				<p>Practice coding, HR and technical interviews instantly.</p>
+
+				<a href="#" class="btn">Get Started</a>
+			</div>
+		</header>
+
+		<section class="features container">
+			<div class="grid">
+				<div class="card">
+					<h3>AI Mock Interviews</h3>
+					<p>Simulate real interview environments with instant evaluation.</p>
+				</div>
+
+				<div class="card">
+					<h3>Resume Analysis</h3>
+					<p>Improve your resume with intelligent suggestions and scoring.</p>
+				</div>
+
+				<div class="card">
+					<h3>Instant Feedback</h3>
+					<p>Receive detailed feedback on communication and coding skills.</p>
+				</div>
+			</div>
+		</section>
+
+		<footer>© 2026 AI Interview Coach. All rights reserved.</footer>
+	</body>
+</html>
